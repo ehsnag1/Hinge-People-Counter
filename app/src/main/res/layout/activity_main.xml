@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <!-- TextView to show total people -->
+    <TextView
+        android:id="@+id/totalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_text_default"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TextView to show current people -->
+    <TextView
+        android:id="@+id/currentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_text_default"
+        android:textSize="36sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Horizontal layout for buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Button to decrement counter -->
+        <Button
+            android:id="@+id/minusBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="@string/minus"
+            android:backgroundTint="@android:color/holo_purple"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <!-- Space between buttons -->
+        <Space
+            android:layout_width="24dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Button to increment counter -->
+        <Button
+            android:id="@+id/plusBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="@string/plus"
+            android:backgroundTint="@android:color/holo_purple"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <!-- Button to reset counter -->
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="40dp" />
+
+</LinearLayout>
